@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Математичні функції й константи</h1>
+<button type="button" class="G" id="G">Результат округлення числа 1,00123 у більшу сторону: y = 2 </button>
+
+<button type="button" id="Gr">.Результат округлення числа -3.1234 у більшу сторону: y = -3</button>
+<button type="button" id="C">Результат округлення числа 1,00123 у меншу сторону: y = 1 </button>
+<button type="button" id="CI">Результат округлення числа -3.1234 у меншу сторону: y = -4</button>
+<button type="button" id="SH">Результат округлення числа 1,44 за правилами арифметики: y = 1 </button>
+
+<div id="output"></div>
+
+<script>
+    // Константи
+    const e = Math.E;
+    const pi = Math.PI;
+    const ln10 = Math.LN10;
+    const ln2 = Math.LN2;
+    const log2e = Math.LOG2E;
+    const log10e = Math.LOG10E;
+    const sqrt2 = Math.SQRT2;
+    const sqrt1_2 = Math.SQRT1_2;
+
+    const outputElement = document.getElementById("output");
+		outputElement.innerHTML = `<h2>КОНСТАНТИ</h2>
+			<p>1. Значення константи е = ${e}</p>
+			<p>2. Значення константи π = ${pi}</p>
+			<p>3. Десятковий логарифм постійної Ейлера (е) = ${ln10}</p>
+			<p>4. Двійковий логарифм постійної Ейлера (е) = ${ln2}</p>
+			<p>5. Натуральний логарифм числа 10 = ${log10e}</p>
+			<p>6. Натуральний логарифм числа 2 = ${log2e}</p>
+			<p>7. Корінь квадратний із двох = ${sqrt2}</p>
+			<p>8. Корінь квадратний з однієї другої = ${sqrt1_2}</p>`;
+
+</script>
+</body>
+</html>
